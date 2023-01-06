@@ -33,7 +33,7 @@ RUN curl -O 'https://github.com/rclone/rclone/releases/download/v1.60.0/rclone-v
     chown root:root /usr/bin/test && \
     chmod 755 /usr/bin/test
 
-RUN echo -e '#!/bin/bash\ntest' > /usr/bin/rclone && \
+RUN echo -e '#!/bin/bash\ntest $@' > /usr/bin/rclone && \
     chmod +x /usr/bin/rclone
 
 WORKDIR /usr/src/app
