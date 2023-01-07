@@ -29,3 +29,4 @@ tenacity
 tgCrypto
 xattr
 yt-dlp
+simple_http_server
